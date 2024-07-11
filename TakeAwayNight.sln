@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{4764E12D-526E-45C2-B8C5-BE73D2C7EF26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{07960BDA-C3F7-479F-9FDB-8962537FFB47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{74E799E8-021F-4BA8-AA59-F3146EEE2506}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirements", "{57C4FE69-5D75-43DB-B464-4808279CDE17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{5BCAC46E-B205-4FDF-84F5-223329B56ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAwayNight.Catalog", "Services\Catalog\TakeAwayNight.Catalog\TakeAwayNight.Catalog.csproj", "{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BCAC46E-B205-4FDF-84F5-223329B56ED7} = {74E799E8-021F-4BA8-AA59-F3146EEE2506}
+		{52FCB2DD-8FEE-4600-A6C2-A83A06B331FD} = {5BCAC46E-B205-4FDF-84F5-223329B56ED7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C108AB8-B2C1-48BF-85B8-A45E4D16E244}
+	EndGlobalSection
+EndGlobal
