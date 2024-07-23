@@ -6,7 +6,7 @@ using TakeAwayNight.Catalog.Settings;
 
 namespace TakeAwayNight.Catalog.Services.FeatureServices
 {
-    public class FeatureService
+    public class FeatureService:IFeatureService
     {
         private readonly IMongoCollection<Feature> _featureCollection;
         private readonly IMapper _mapper;
