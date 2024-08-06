@@ -37,19 +37,23 @@ namespace TakeAwayNight.Comment.Services
             return _mapper.Map<List<ResultUserCommentDto>>(values);
         }
 
-        public Task<GetByIdUserCommentDto> GetByIdUserCommentAsync(int id)
+        public async Task<GetByIdUserCommentDto> GetByIdUserCommentAsync(int id)
         {
-            throw new NotImplementedException();
+            var values = await _commentContext.UserComments.FindAsync(id);
+            return _mapper.Map<GetByIdUserCommentDto>(values);
         }
 
-        public Task<List<GetByProductIdUserCommentDto>> GetByProductIdUserCommentAsync(string id)
+        public async Task<List<GetByProductIdUserCommentDto>> GetByProductIdUserCommentAsync(string id)
         {
-            throw new NotImplementedException();
+            var values = await _commentContext.UserComments.Where(x => x.ProductId == id).ToListAsync();
+            return _mapper.Map<List<GetByProductIdUserCommentDto>>(values);
         }
 
-        public Task UpdateUserCommentAsync(UpdateUserCommentDto updateUserCommentDto)
+        public async Task UpdateUserCommentAsync(UpdateUserCommentDto updateUserCommentDto)
         {
-            throw new NotImplementedException();
+            var values = _mapper.Map<UserComment>(updateUserCommentDto);
+            _commentContext.UserComments.Update(values);
+            await _commentContext.SaveChangesAsync();
         }
     }
 }
